@@ -687,12 +687,18 @@ section.lazy-placeholder:after {
 .cid-qTkA127IK8 {
   padding-top: 135px;
   padding-bottom: 135px;
-  background-color: #0ba3d6;
+  background-color: #cebfaf;
+}
+.cid-qTkA127IK8 H1 {
+  color: #232323;
+}
+.cid-qTkA127IK8 H3 {
+  color: #232323;
 }
 .cid-stfqdSBB9B {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #efefef;
+  background-color: #4f4943;
 }
 .cid-stfqdSBB9B .card-img {
   background-color: #fff;
@@ -1119,12 +1125,12 @@ section.lazy-placeholder:after {
 }
 .cid-qTkzRZLJNu .nav-link:hover,
 .cid-qTkzRZLJNu .dropdown-item:hover {
-  color: #c1c1c1 !important;
+  color: #232323 !important;
 }
 .cid-qTkAaeaxX5 {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #c1c1c1;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .cid-qTkAaeaxX5 .content {
