@@ -1,0 +1,523 @@
+/* Main Styles for Sound Score Dashboard - Improved Colors and Readability */
+:root {
+    /* Modern App Color Scheme */
+    --background: #f8fafc;
+    --card-background: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --accent-color: #3b82f6;
+    
+    /* Brighter Sound Categories */
+    --mechanical: #f43f5e;      /* Bright pink-red */
+    --melodic: #f59e0b;         /* Amber */
+    --electronic: #0ea5e9;      /* Sky blue */
+    --organic-electronic: #10b981; /* Emerald */
+    --ethereal: #8b5cf6;        /* Violet */
+    --silence: #475569;         /* Slate */
+    --micro-group: #6366f1;     /* Indigo */
+    
+    /* Layout */
+    --section-height: 46px;
+    --section-spacing: 14px;
+    --border-radius: 6px;
+    --container-padding: 24px;
+    --timeline-height: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: var(--card-background);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 36px var(--container-padding);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+section {
+    padding: var(--container-padding);
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--card-background);
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Act Structure */
+.act-structure {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.act {
+    padding: 10px 15px;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.act-1 {
+    flex: 3.1;
+    margin-right: 8px;
+    background-color: rgba(244, 63, 94, 0.08);
+    border-color: rgba(244, 63, 94, 0.2);
+}
+
+.act-2 {
+    flex: 3.5;
+    margin-right: 8px;
+    background-color: rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+.act-3 {
+    flex: 3.4;
+    background-color: rgba(99, 102, 241, 0.08);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.timecode-markers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.timecode-markers span {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.timeline-track {
+    height: var(--timeline-height);
+    background-color: #cbd5e1;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.sections-container {
+    position: relative;
+}
+
+.section-row {
+    position: relative;
+    height: calc(var(--section-height) + var(--section-spacing) * 2);
+    margin-bottom: 14px;
+}
+
+/* Section Styles - Improved for readability */
+.section, .micro {
+    position: absolute;
+    height: var(--section-height);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: visible; /* Changed to visible for tooltips */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover, .micro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+}
+
+.section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Improved section details with tooltip behavior */
+.section-details, .micro-details {
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+/* For very small sections, show tooltip on hover */
+.section[style*="width: 5%"] .section-details,
+.section[style*="width: 4%"] .section-details,
+.section[style*="width: 3%"] .section-details,
+.section[style*="width: 2%"] .section-details,
+.section[style*="width: 1%"] .section-details {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -40px;
+    left: 0;
+    background-color: white;
+    color: var(--text-primary);
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    transition: opacity 0.2s ease;
+}
+
+.section[style*="width: 5%"]:hover .section-details,
+.section[style*="width: 4%"]:hover .section-details,
+.section[style*="width: 3%"]:hover .section-details,
+.section[style*="width: 2%"]:hover .section-details,
+.section[style*="width: 1%"]:hover .section-details {
+    visibility: visible;
+    opacity: 1;
+}
+
+.timecode, .duration {
+    font-size: 10px;
+    display: block;
+    opacity: 0.9;
+}
+
+/* Category Colors - Brighter and more distinct */
+.mechanical {
+    background-color: var(--mechanical);
+}
+
+.melodic {
+    background-color: var(--melodic);
+}
+
+.electronic {
+    background-color: var(--electronic);
+}
+
+.organic-electronic {
+    background-color: var(--organic-electronic);
+}
+
+.ethereal {
+    background-color: var(--ethereal);
+}
+
+.silence {
+    background-color: var(--silence);
+}
+
+.micro-group {
+    background-color: var(--micro-group);
+}
+
+/* Micro Sequences - Improved styling */
+.micro-sequences {
+    background-color: #f1f5f9;
+    border-radius: 12px;
+}
+
+.micro-container {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.micro {
+    position: relative;
+    width: 220px;
+    height: var(--section-height);
+}
+
+/* Dynamic Intensity */
+.intensity-chart {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.intensity-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Audio Characteristics */
+.audio-visual {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.audio-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Legend - More app-like */
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 16px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    background-color: #f1f5f9;
+}
+
+/* Playback Controls */
+.playback-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.playback-button:hover {
+    background-color: #2563eb;
+}
+
+.playback-marker {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 4px;
+    height: calc(100% + 20px);
+    background-color: #ef4444;
+    z-index: 5;
+    pointer-events: none;
+    transition: left 0.1s linear;
+    border-radius: 2px;
+}
+
+.current-time {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 600;
+    margin-left: -20px;
+    transition: left 0.1s linear;
+    background-color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight states */
+.highlighted {
+    box-shadow: 0 0 0 3px #ef4444;
+    z-index: 10;
+}
+
+.active {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.current-section {
+    animation: pulse 1.5s infinite;
+    z-index: 8;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+}
+
+/* Show section details on mobile only when explicitly shown */
+@media (max-width: 900px) {
+    .section-details h4 {
+        display: none;
+    }
+    
+    .section-details.show-mobile h4 {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: white;
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        color: var(--text-primary);
+        z-index: 20;
+        font-size: 14px;
+    }
+    
+    .section-details.show-mobile .timecode,
+    .section-details.show-mobile .duration {
+        display: block;
+        font-size: 12px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .section-details h4 {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .section-details .timecode,
+    .section-details .duration {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 900px) {
+    .dashboard {
+        border-radius: 0;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .section-number {
+        min-width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    
+    .timecode-markers span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    
+    .act h3 {
+        font-size: 12px;
+    }
+    
+    .section {
+        height: 36px;
+    }
+    
+    .section-number {
+        margin: 0 6px;
+    }
+    
+    .section-details .timecode,
+    .section-details .duration {
+        display: none;
+    }
+    
+    .legend-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
