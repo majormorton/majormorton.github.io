@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Social Media / Open Graph Tags -->
+<meta property="og:title" content="bamboogrowsinmybackyard">
+<meta property="og:description" content="Interactive visualization of a 13:52 sound score across 22 named sections">
+<meta property="og:image" content="https://timothybuckley.com/web-score/sound-score-preview.png">
+<meta property="og:url" content="https://timothybuckley.com/web-score/index.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+    
+    <title>bamboogrowsinmybackyard</title>
+    <link rel="stylesheet" href="sound-score-improved.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add additional tooltip styling directly in the HTML */
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: white;
+            color: #1e293b;
+            padding: 8px 12px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
+        .section:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .section-explanation {
+            margin-bottom: 20px;
+            color: #475569;
+            font-size: 15px;
+            line-height: 1.5;
+            background-color: rgba(99, 102, 241, 0.08);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 4px solid #6366f1;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Sound Score Journey</h1>
+            <p class="subtitle">13:52 total duration across 22 named sections</p>
+        </header>
+
+        <section class="main-timeline-container">
+            <h2>Timeline View</h2>
+            <p class="section-explanation">This timeline shows all 22 sections in their relative positions and durations. Hover over any section to see details.</p>
+            
+            <div class="act-structure">
+                <div class="act act-1">
+                    <h3>ACT I: MECHANICAL</h3>
+                </div>
+                <div class="act act-2">
+                    <h3>ACT II: NATURAL/AMBIENT</h3>
+                </div>
+                <div class="act act-3">
+                    <h3>ACT III: FRAGMENTARY/HUMAN</h3>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timecode-markers">
+                    <span>00:00</span>
+                    <span>01:00</span>
+                    <span>02:00</span>
+                    <span>03:00</span>
+                    <span>04:00</span>
+                    <span>05:00</span>
+                    <span>06:00</span>
+                    <span>07:00</span>
+                    <span>08:00</span>
+                    <span>09:00</span>
+                    <span>10:00</span>
+                    <span>11:00</span>
+                    <span>12:00</span>
+                    <span>13:00</span>
+                </div>
+                
+                <div class="timeline-track"></div>
+                
+                <div class="sections-container">
+                    <!-- Row 1 -->
+                    <div class="section-row">
+                        <!-- Factory Hum -->
+                        <div class="section mechanical" style="left: 0%; width: 3.72%;" data-section="Factory Hum">
+                            <span class="section-number">1</span>
+                            <div class="section-details">
+                                <h4>Factory Hum</h4>
+                                <span class="timecode">00:00-00:31</span>
+                                <span class="duration">31s</span>
+                            </div>
+                            <div class="tooltip">Factory Hum (31s)</div>
+                        </div>
+                        
+                        <!-- Digital Waves -->
+                        <div class="section electronic" style="left: 8.65%; width: 6.48%;" data-section="Digital Waves">
+                            <span class="section-number">4</span>
+                            <div class="section-details">
+                                <h4>Digital Waves</h4>
+                                <span class="timecode">01:00-01:54</span>
+                                <span class="duration">54s</span>
+                            </div>
+                            <div class="tooltip">Digital Waves (54s)</div>
+                        </div>
+                        
+                        <!-- Harbor Depths -->
+                        <div class="section organic-electronic" style="left: 30.53%; width: 10.08%;" data-section="Harbor Depths">
+                            <span class="section-number">7</span>
+                            <div class="section-details">
+                                <h4>Harbor Depths</h4>
+                                <span class="timecode">03:32-04:56</span>
+                                <span class="duration">84s</span>
+                            </div>
+                            <div class="tooltip">Harbor Depths (84s)</div>
+                        </div>
+                        
+                        <!-- Alert Signals -->
+                        <div class="section mechanical" style="left: 68.99%; width: 4.32%;" data-section="Alert Signals">
+                            <span class="section-number">10</span>
+                            <div class="section-details">
+                                <h4>Alert Signals</h4>
+                                <span class="timecode">07:58-08:34</span>
+                                <span class="duration">36s</span>
+                            </div>
+                            <div class="tooltip">Alert Signals (36s)</div>
+                        </div>
+                        
+                        <!-- Tokyo Monologue -->
+                        <div class="section mechanical" style="left: 80.99%; width: 4.8%;" data-section="Tokyo Monologue">
+                            <span class="section-number">19</span>
+                            <div class="section-details">
+                                <h4>Tokyo Monologue</h4>
+                                <span class="timecode">11:19-11:59</span>
+                                <span class="duration">40s</span>
+                            </div>
+                            <div class="tooltip">Tokyo Monologue (40s)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="section-row">
+                        <!-- Space Signal -->
+                        <div class="section melodic" style="left: 4.45%; width: 1.32%;" data-section="Space Signal">
+                            <span class="section-number">2</span>
+                            <div class="section-details">
+                                <h4>Space Signal</h4>
+                                <span class="timecode">00:31-00:42</span>
+                                <span class="duration">11s</span>
+                            </div>
+                            <div class="tooltip">Space Signal (11s)</div>
+                        </div>
+                        
+                        <!-- Rising Tension -->
+                        <div class="section electronic" style="left: 16.44%; width: 3.36%;" data-section="Rising Tension">
+                            <span class="section-number">5</span>
+                            <div class="section-details">
+                                <h4>Rising Tension</h4>
+                                <span class="timecode">01:54-02:22</span>
+                                <span class="duration">28s</span>
+                            </div>
+                            <div class="tooltip">Rising Tension (28s)</div>
+                        </div>
+                        
+                        <!-- Distant Sacred -->
+                        <div class="section ethereal" style="left: 42.69%; width: 2.4%;" data-section="Distant Sacred">
+                            <span class="section-number">8</span>
+                            <div class="section-details">
+                                <h4>Distant Sacred</h4>
+                                <span class="timecode">04:56-05:16</span>
+                                <span class="duration">20s</span>
+                            </div>
+                            <div class="tooltip">Distant Sacred (20s)</div>
+                        </div>
+                        
+                        <!-- Metal Birds -->
+                        <div class="section mechanical" style="left: 73.71%; width: 10.92%;" data-section="Metal Birds">
+                            <span class="section-number">11</span>
+                            <div class="section-details">
+                                <h4>Metal Birds</h4>
+                                <span class="timecode">08:34-10:05</span>
+                                <span class="duration">91s</span>
+                            </div>
+                            <div class="tooltip">Metal Birds (91s)</div>
+                        </div>
+                        
+                        <!-- Radio Ghosts -->
+                        <div class="section silence" style="left: 86.27%; width: 1.44%;" data-section="Radio Ghosts">
+                            <span class="section-number">20</span>
+                            <div class="section-details">
+                                <h4>Radio Ghosts</h4>
+                                <span class="timecode">11:59-12:11</span>
+                                <span class="duration">12s</span>
+                            </div>
+                            <div class="tooltip">Radio Ghosts (12s)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 3 -->
+                    <div class="section-row">
+                        <!-- Voice Fragments -->
+                        <div class="section melodic" style="left: 6.06%; width: 2.16%;" data-section="Voice Fragments">
+                            <span class="section-number">3</span>
+                            <div class="section-details">
+                                <h4>Voice Fragments</h4>
+                                <span class="timecode">00:42-01:00</span>
+                                <span class="duration">18s</span>
+                            </div>
+                            <div class="tooltip">Voice Fragments (18s)</div>
+                        </div>
+                        
+                        <!-- Electric Insects -->
+                        <div class="section organic-electronic" style="left: 20.48%; width: 8.4%;" data-section="Electric Insects">
+                            <span class="section-number">6</span>
+                            <div class="section-details">
+                                <h4>Electric Insects</h4>
+                                <span class="timecode">02:22-03:32</span>
+                                <span class="duration">70s</span>
+                            </div>
+                            <div class="tooltip">Electric Insects (70s)</div>
+                        </div>
+                        
+                        <!-- Desert Passage -->
+                        <div class="section ethereal" style="left: 45.58%; width: 19.44%;" data-section="Desert Passage">
+                            <span class="section-number">9</span>
+                            <div class="section-details">
+                                <h4>Desert Passage</h4>
+                                <span class="timecode">05:16-07:58</span>
+                                <span class="duration">162s</span>
+                            </div>
+                            <div class="tooltip">Desert Passage (162s)</div>
+                        </div>
+                        
+                        <!-- Phantom Fair -->
+                        <div class="section melodic" style="left: 75.96%; width: 2.4%;" data-section="Phantom Fair">
+                            <span class="section-number">12</span>
+                            <div class="section-details">
+                                <h4>Phantom Fair</h4>
+                                <span class="timecode">10:05-10:25</span>
+                                <span class="duration">20s</span>
+                            </div>
+                            <div class="tooltip">Phantom Fair (20s)</div>
+                        </div>
+                        
+                        <!-- Children's March -->
+                        <div class="section electronic" style="left: 87.65%; width: 4.2%;" data-section="Children's March">
+                            <span class="section-number">21</span>
+                            <div class="section-details">
+                                <h4>Children's March</h4>
+                                <span class="timecode">12:11-12:46</span>
+                                <span class="duration">35s</span>
+                            </div>
+                            <div class="tooltip">Children's March (35s)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row 4 -->
+                    <div class="section-row">
+                        <!-- Fireside Rhythm -->
+                        <div class="section melodic" style="left: 78.42%; width: 2.64%;" data-section="Fireside Rhythm">
+                            <span class="section-number">13</span>
+                            <div class="section-details">
+                                <h4>Fireside Rhythm</h4>
+                                <span class="timecode">10:25-10:47</span>
+                                <span class="duration">22s</span>
+                            </div>
+                            <div class="tooltip">Fireside Rhythm (22s)</div>
+                        </div>
+                        
+                        <!-- Micro Sequences Group -->
+                        <div class="section micro-group" style="left: 80.82%; width: 2.16%;" data-section="Micro Sequences">
+                            <span class="section-number">14-17</span>
+                            <div class="section-details">
+                                <h4>Micro Sequences</h4>
+                                <span class="timecode">10:47-11:05</span>
+                                <span class="duration">18s</span>
+                            </div>
+                            <div class="tooltip">Micro Sequences Group (18s)</div>
+                        </div>
+                        
+                        <!-- Urban Pulse -->
+                        <div class="section electronic" style="left: 83.29%; width: 1.68%;" data-section="Urban Pulse">
+                            <span class="section-number">18</span>
+                            <div class="section-details">
+                                <h4>Urban Pulse</h4>
+                                <span class="timecode">11:05-11:19</span>
+                                <span class="duration">14s</span>
+                            </div>
+                            <div class="tooltip">Urban Pulse (14s)</div>
+                        </div>
+                        
+                        <!-- Final Lullaby -->
+                        <div class="section ethereal" style="left: 92.07%; width: 7.92%;" data-section="Final Lullaby">
+                            <span class="section-number">22</span>
+                            <div class="section-details">
+                                <h4>Final Lullaby</h4>
+                                <span class="timecode">12:46-13:52</span>
+                                <span class="duration">66s</span>
+                            </div>
+                            <div class="tooltip">Final Lullaby (66s)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="micro-sequences">
+            <h2>Micro Sequences Detail</h2>
+            <p class="section-explanation">These extremely short sections (4-6 seconds each) appear in sequence between 10:47-11:05, creating rapid transitions in the sound. Due to their brief durations, they're difficult to see in the main timeline, so they're detailed here for clarity.</p>
+            <div class="micro-container">
+                <div class="micro silence">
+                    <span class="section-number">14</span>
+                    <div class="micro-details">
+                        <h4>First Void</h4>
+                        <span class="timecode">10:47-10:53</span>
+                        <span class="duration">6s</span>
+                    </div>
+                </div>
+                <div class="micro melodic">
+                    <span class="section-number">15</span>
+                    <div class="micro-details">
+                        <h4>Brief Return</h4>
+                        <span class="timecode">10:53-10:57</span>
+                        <span class="duration">4s</span>
+                    </div>
+                </div>
+                <div class="micro silence">
+                    <span class="section-number">16</span>
+                    <div class="micro-details">
+                        <h4>Sharp Cut</h4>
+                        <span class="timecode">10:57-11:01</span>
+                        <span class="duration">4s</span>
+                    </div>
+                </div>
+                <div class="micro melodic">
+                    <span class="section-number">17</span>
+                    <div class="micro-details">
+                        <h4>Single Note</h4>
+                        <span class="timecode">11:01-11:05</span>
+                        <span class="duration">4s</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="dynamic-intensity">
+            <h2>Dynamic Intensity</h2>
+            <p class="section-explanation">This curve visualizes the emotional and dynamic journey through the sound score, showing how intensity rises and falls across the composition.</p>
+            <div class="intensity-chart">
+                <!-- SVG for intensity curve -->
+                <svg viewBox="0 0 1000 200" class="intensity-svg">
+                    <!-- Base line -->
+                    <line x1="0" y1="100" x2="1000" y2="100" stroke="#ccc" stroke-width="1" />
+                    
+                    <!-- Intensity markers -->
+                    <line x1="0" y1="50" x2="1000" y2="50" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+                    <text x="10" y="55" font-size="12" fill="#666">High</text>
+                    
+                    <line x1="0" y1="100" x2="1000" y2="100" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+                    <text x="10" y="105" font-size="12" fill="#666">Med</text>
+                    
+                    <line x1="0" y1="150" x2="1000" y2="150" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5" />
+                    <text x="10" y="155" font-size="12" fill="#666">Low</text>
+                    
+                    <!-- Dynamic curve -->
+                    <path d="M 0 100 
+                        C 40 70, 60 75, 100 60
+                        C 140 45, 190 50, 220 65
+                        C 250 80, 290 95, 370 50
+                        C 450 5, 500 30, 550 100
+                        C 600 170, 700 180, 750 120
+                        C 800 60, 850 130, 900 150
+                        C 950 170, 975 160, 1000 140"
+                        fill="none" stroke="#3b82f6" stroke-width="3" />
+                        
+                    <!-- Key points markers -->
+                    <circle cx="370" cy="50" r="6" fill="#f43f5e" />
+                    <text x="370" y="40" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Desert Passage</text>
+                    
+                    <circle cx="750" cy="120" r="6" fill="#f43f5e" />
+                    <text x="750" y="110" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Phantom Fair</text>
+                    
+                    <circle cx="900" cy="150" r="6" fill="#f43f5e" />
+                    <text x="900" y="140" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Tokyo Monologue</text>
+                </svg>
+            </div>
+        </section>
+        
+        <section class="audio-characteristics">
+            <h2>Audio Characteristics</h2>
+            <p class="section-explanation">This visualization represents the sonic patterns and waveforms of each section, providing a visual representation of the sound qualities.</p>
+            <div class="audio-visual">
+                <!-- SVG for audio visualization -->
+                <svg viewBox="0 0 1000 100" class="audio-svg">
+                    <!-- Factory Hum -->
+                    <path d="M 0 50 
+                        L 5 52 L 10 55 L 15 48 L 20 52 L 25 45 L 30 55 L 35 47 L 40 50"
+                        fill="none" stroke="#f43f5e" stroke-width="2" />
+                    
+                    <!-- Space Signal -->
+                    <path d="M 40 50
+                        L 45 30 L 50 70 L 55 35 L 60 65 L 65 40 L 70 50"
+                        fill="none" stroke="#f59e0b" stroke-width="2" />
+                    
+                    <!-- Voice Fragments -->
+                    <path d="M 70 50
+                        C 73 35, 76 40, 78 55
+                        C 80 65, 82 55, 85 45
+                        C 87 30, 90 60, 92 50"
+                        fill="none" stroke="#f59e0b" stroke-width="2" />
+                        
+                    <!-- Digital Waves -->
+                    <path d="M 92 50
+                        L 100 50 L 100 40 L 110 40 L 110 60 L 120 60 L 120 40
+                        L 130 40 L 130 50 L 140 50 L 140 45 L 150 45 L 150 55 L 160 50"
+                        fill="none" stroke="#0ea5e9" stroke-width="2" />
+                        
+                    <!-- Rising Tension -->
+                    <path d="M 160 50
+                        C 170 55, 180 45, 190 52
+                        C 200 45, 210 60, 220 55
+                        C 230 30, 240 50, 250 40"
+                        fill="none" stroke="#0ea5e9" stroke-width="2" />
+                    
+                    <!-- Electric Insects -->
+                    <path d="M 250 50
+                        C 260 30, 270 70, 280 40
+                        C 290 60, 300 30, 310 55
+                        C 320 40, 330 60, 340 45
+                        C 350 65, 360 35, 370 50"
+                        fill="none" stroke="#10b981" stroke-width="2" />
+                    
+                    <!-- Harbor Depths -->
+                    <path d="M 370 50
+                        C 380 60, 390 55, 400 58
+                        C 410 62, 420 60, 430 55
+                        C 440 50, 450 55, 460 60
+                        C 470 65, 475 45, 480 50"
+                        fill="none" stroke="#10b981" stroke-width="2" />
+                    
+                    <!-- Distant Sacred -->
+                    <path d="M 480 50
+                        C 483 45, 486 45, 489 50
+                        C 492 55, 495 55, 498 50
+                        C 501 45, 504 45, 507 50
+                        C 510 55, 513 55, 516 50"
+                        fill="none" stroke="#8b5cf6" stroke-width="2" />
+                    
+                    <!-- Desert Passage -->
+                    <path d="M 516 50
+                        C 536 45, 556 48, 576 43
+                        C 596 38, 616 40, 636 45
+                        C 656 50, 676 48, 696 42
+                        C 716 36, 736 48, 756 50"
+                        fill="none" stroke="#8b5cf6" stroke-width="2" />
+                    
+                    <!-- Alert Signals and Metal Birds -->
+                    <path d="M 756 50
+                        C 766 30, 776 70, 786 30
+                        C 796 70, 806 30, 816 70
+                        C 826 30, 836 70, 846 30
+                        C 856 70, 866 40, 876 50"
+                        fill="none" stroke="#f43f5e" stroke-width="2" />
+                    
+                    <!-- Phantom Fair and Fireside Rhythm -->
+                    <path d="M 876 50
+                        C 880 40, 884 60, 888 40
+                        C 892 60, 896 40, 900 60
+                        C 904 40, 908 60, 912 50"
+                        fill="none" stroke="#f59e0b" stroke-width="2" />
+                    
+                    <!-- Micro Sequences -->
+                    <path d="M 912 50
+                        L 914 50 L 914 30 L 916 50 L 916 70 L 918 50 L 918 30 L 920 50 L 920 70 L 922 50"
+                        fill="none" stroke="#6366f1" stroke-width="2" />
+                    
+                    <!-- Urban Pulse, Tokyo Monologue, Radio Ghosts, Children's March -->
+                    <path d="M 922 50
+                        L 925 35 L 928 50 L 931 35 L 934 50 L 937 35 L 940 50
+                        C 945 40, 950 60, 955 45
+                        L 960 50 L 960 35 L 964 50 L 968 35 L 972 50
+                        C 976 40, 980 60, 984 50"
+                        fill="none" stroke="#0ea5e9" stroke-width="2" />
+                    
+                    <!-- Final Lullaby -->
+                    <path d="M 984 50
+                        C 987 40, 990 60, 993 45
+                        C 995 55, 997 40, 999 50
+                        C 1000 45, 1000 55, 1000 50"
+                        fill="none" stroke="#8b5cf6" stroke-width="2" />
+                </svg>
+            </div>
+        </section>
+        
+        <section class="legend">
+            <h2>Sound Categories</h2>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="color-box mechanical"></div>
+                    <span>Mechanical/Voice</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box melodic"></div>
+                    <span>Melodic/Rhythmic</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box electronic"></div>
+                    <span>Electronic/Digital</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box organic-electronic"></div>
+                    <span>Organic-Electronic</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box ethereal"></div>
+                    <span>Ethereal/Ambient</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box silence"></div>
+                    <span>Silence/Minimal</span>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Sound Score Visualization - Updated March 2025</p>
+        </footer>
+    </div>
+    
+    <script src="sound-score.js"></script>
+</body>
+</html>
