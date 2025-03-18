@@ -1,0 +1,464 @@
+/* Main Styles for Sound Score Dashboard */
+:root {
+    /* Color Scheme */
+    --background: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #dddddd;
+    
+    /* Sound Categories */
+    --mechanical: #661111;
+    --melodic: #AA6611;
+    --electronic: #116699;
+    --organic-electronic: #116644;
+    --ethereal: #662288;
+    --silence: #222244;
+    --micro-group: #555566;
+    
+    /* Layout */
+    --section-height: 40px;
+    --section-spacing: 12px;
+    --border-radius: 4px;
+    --container-padding: 20px;
+    --timeline-height: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px var(--container-padding);
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+section {
+    padding: var(--container-padding);
+    border-bottom: 1px solid var(--border-color);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Act Structure */
+.act-structure {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.act {
+    padding: 8px 15px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.act-1 {
+    flex: 3.1;
+    margin-right: 5px;
+}
+
+.act-2 {
+    flex: 3.5;
+    margin-right: 5px;
+}
+
+.act-3 {
+    flex: 3.4;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timecode-markers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.timecode-markers span {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.timeline-track {
+    height: var(--timeline-height);
+    background-color: #333;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sections-container {
+    position: relative;
+}
+
+.section-row {
+    position: relative;
+    height: calc(var(--section-height) + var(--section-spacing) * 2);
+    margin-bottom: 10px;
+}
+
+/* Section Styles */
+.section, .micro {
+    position: absolute;
+    height: var(--section-height);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover, .micro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.section-details, .micro-details {
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.timecode, .duration {
+    font-size: 9px;
+    display: block;
+    opacity: 0.8;
+}
+
+/* Category Colors */
+.mechanical {
+    background-color: var(--mechanical);
+}
+
+.melodic {
+    background-color: var(--melodic);
+}
+
+.electronic {
+    background-color: var(--electronic);
+}
+
+.organic-electronic {
+    background-color: var(--organic-electronic);
+}
+
+.ethereal {
+    background-color: var(--ethereal);
+}
+
+.silence {
+    background-color: var(--silence);
+}
+
+.micro-group {
+    background-color: var(--micro-group);
+}
+
+/* Micro Sequences */
+.micro-sequences {
+    background-color: #f0f0f0;
+}
+
+.micro-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.micro {
+    position: relative;
+    width: 200px;
+    height: var(--section-height);
+}
+
+/* Dynamic Intensity */
+.intensity-chart {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.intensity-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Audio Characteristics */
+.audio-visual {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.audio-svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Legend */
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Playback Controls */
+.playback-button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.playback-button:hover {
+    background-color: #34495e;
+}
+
+.playback-marker {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 3px;
+    height: calc(100% + 20px);
+    background-color: #e74c3c;
+    z-index: 5;
+    pointer-events: none;
+    transition: left 0.1s linear;
+}
+
+.current-time {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 12px;
+    color: #e74c3c;
+    font-weight: 600;
+    margin-left: -20px;
+    transition: left 0.1s linear;
+}
+
+/* Highlight states */
+.highlighted {
+    box-shadow: 0 0 0 2px #e74c3c;
+    z-index: 10;
+}
+
+.active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.current-section {
+    animation: pulse 1.5s infinite;
+    z-index: 8;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(231, 76, 60, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
+/* Show section details on mobile only when explicitly shown */
+@media (max-width: 900px) {
+    .section-details h4 {
+        display: none;
+    }
+    
+    .section-details.show-mobile h4 {
+        display: block;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        color: var(--text-primary);
+        z-index: 20;
+    }
+    
+    .section-details.show-mobile .timecode,
+    .section-details.show-mobile .duration {
+        display: block;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .section-details h4 {
+        font-size: 12px;
+    }
+    
+    .section-details .timecode,
+    .section-details .duration {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .dashboard {
+        border-radius: 0;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .section-details h4 {
+        display: none;
+    }
+    
+    .section-number {
+        min-width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    .timecode-markers span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    
+    .act h3 {
+        font-size: 12px;
+    }
+    
+    .section {
+        height: 30px;
+    }
+    
+    .section-number {
+        margin: 0 5px;
+    }
+    
+    .section-details .timecode,
+    .section-details .duration {
+        display: none;
+    }
+    
+    .legend-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
