@@ -1,0 +1,646 @@
+[
+ {
+  "file": "web/001.jpg",
+  "w": 1600,
+  "h": 686,
+  "caption": "",
+  "source": "3688F7B7-5A24-45BB-99EC-DF4C5F57FF2A.png"
+ },
+ {
+  "file": "web/002.jpg",
+  "w": 1122,
+  "h": 1402,
+  "caption": "",
+  "source": "456D034C-26AB-4A11-A1DB-273760ED9042.png"
+ },
+ {
+  "file": "web/003.jpg",
+  "w": 1600,
+  "h": 900,
+  "caption": "",
+  "source": "4F06F108-F318-4140-A3BB-D69BE374F70A.png"
+ },
+ {
+  "file": "web/004.jpg",
+  "w": 1600,
+  "h": 1067,
+  "caption": "",
+  "source": "54993208327_27298fde5c_b.jpg"
+ },
+ {
+  "file": "web/005.jpg",
+  "w": 1122,
+  "h": 1402,
+  "caption": "",
+  "source": "8571D201-63C6-4312-8639-1FDE9071B092.png"
+ },
+ {
+  "file": "web/006.jpg",
+  "w": 1122,
+  "h": 1402,
+  "caption": "",
+  "source": "AFD41C71-75DD-4EF5-A3C6-1CA3CD457187.png"
+ },
+ {
+  "file": "web/007.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Aunt Nancy's Tennis Shoes",
+  "source": "Aunt_Nancys_Tennis_Shoes_NEW._black_and_white_found_photograp_31c8dcbb-1b1d-44cf-97a1-2e695820da85_0.png"
+ },
+ {
+  "file": "web/008.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Aunt Nancy's Tennis Shoes",
+  "source": "Aunt_Nancys_Tennis_Shoes_NEW._black_and_white_found_photograp_85bcbdb7-0f76-4e4b-be2d-1449e7e27279_0.png"
+ },
+ {
+  "file": "web/009.jpg",
+  "w": 1600,
+  "h": 595,
+  "caption": "",
+  "source": "B8657A8A-C22F-4BA1-AAA9-27FDA539D693.jpeg"
+ },
+ {
+  "file": "web/010.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Clothes Stained",
+  "source": "Clothes_Stained._black_and_white_found_photograph_harsh_flash_1f24b84f-e3d7-488d-8aa0-e699a881e794_0.png"
+ },
+ {
+  "file": "web/011.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "The Sacrifice (Surreal Farm Version)",
+  "source": "F-08__Wide__THE_SACRIFICE_Surreal_Farm_Version._black_and_whi_4e58e375-f684-4377-80a7-711bb7afbafa_0.png"
+ },
+ {
+  "file": "web/012.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Farm Receding Through Rear Window",
+  "source": "F-25__Wide__Farm_Receding_Through_Rear_Window__black_and_whit_41abfe93-f370-4786-b1fc-c31027e391bc_0.png"
+ },
+ {
+  "file": "web/013.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Farm Receding Through Rear Window",
+  "source": "F-25__Wide__Farm_Receding_Through_Rear_Window__black_and_whit_eaa4f7e9-1735-4fa9-b388-08e50cff1b7f_0.png"
+ },
+ {
+  "file": "web/014.jpg",
+  "w": 1600,
+  "h": 900,
+  "caption": "",
+  "source": "F3AB5AE3-1F8B-46A8-BB48-1A1D6773BEA4.png"
+ },
+ {
+  "file": "web/015.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Farm at Dusk",
+  "source": "Farm_at_Dusk._black_and_white_found_photograph_1960s_white_fa_602e048e-d992-42c4-8028-1fc00d2868ee_0.png"
+ },
+ {
+  "file": "web/016.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Farm at Dusk",
+  "source": "Farm_at_Dusk._black_and_white_found_photograph_1960s_white_fa_fcad81ce-c3a3-41b3-b3d9-c0f895f83796_0.png"
+ },
+ {
+  "file": "web/017.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Hay Bales in Barn",
+  "source": "Hay_Bales_in_Barn._black_and_white_found_photograph_1960s_rec_c48ec84a-2e2b-42bc-b408-b636875330b5_0 2.png"
+ },
+ {
+  "file": "web/018.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Hay Bales in Barn",
+  "source": "Hay_Bales_in_Barn._black_and_white_found_photograph_1960s_rec_f1f76417-de78-46df-940f-7bfc117bcba7_0 2.png"
+ },
+ {
+  "file": "web/019.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Hudson Arriving",
+  "source": "Hudson_Arriving._black_and_white_found_photograph_1960s_night_3f06b0f7-ea52-4afb-b445-bbdae70de553_0.png"
+ },
+ {
+  "file": "web/020.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Hudson Arriving",
+  "source": "Hudson_Arriving._black_and_white_found_photograph_1960s_night_de5978c8-8751-4a1a-b251-6968beb9430a_0.png"
+ },
+ {
+  "file": "web/021.jpg",
+  "w": 1440,
+  "h": 1080,
+  "caption": "",
+  "source": "IMG_3032.PNG"
+ },
+ {
+  "file": "web/022.jpg",
+  "w": 1440,
+  "h": 1080,
+  "caption": "",
+  "source": "IMG_3035.PNG"
+ },
+ {
+  "file": "web/023.jpg",
+  "w": 1376,
+  "h": 1600,
+  "caption": "",
+  "source": "IMG_3036.jpeg"
+ },
+ {
+  "file": "web/024.jpg",
+  "w": 1165,
+  "h": 1056,
+  "caption": "",
+  "source": "IMG_3056.jpeg"
+ },
+ {
+  "file": "web/025.jpg",
+  "w": 1600,
+  "h": 907,
+  "caption": "",
+  "source": "IMG_3274.PNG"
+ },
+ {
+  "file": "web/026.jpg",
+  "w": 1600,
+  "h": 900,
+  "caption": "",
+  "source": "IMG_3335.PNG"
+ },
+ {
+  "file": "web/027.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3423.PNG"
+ },
+ {
+  "file": "web/028.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3425.PNG"
+ },
+ {
+  "file": "web/029.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3426.PNG"
+ },
+ {
+  "file": "web/030.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3427.PNG"
+ },
+ {
+  "file": "web/031.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3428.PNG"
+ },
+ {
+  "file": "web/032.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3429.PNG"
+ },
+ {
+  "file": "web/033.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3441.PNG"
+ },
+ {
+  "file": "web/034.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3442.PNG"
+ },
+ {
+  "file": "web/035.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3443.PNG"
+ },
+ {
+  "file": "web/036.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3468.PNG"
+ },
+ {
+  "file": "web/037.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3469.PNG"
+ },
+ {
+  "file": "web/038.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3470.PNG"
+ },
+ {
+  "file": "web/039.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3471.PNG"
+ },
+ {
+  "file": "web/040.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_3472.PNG"
+ },
+ {
+  "file": "web/041.jpg",
+  "w": 1600,
+  "h": 900,
+  "caption": "",
+  "source": "IMG_3562.PNG"
+ },
+ {
+  "file": "web/042.jpg",
+  "w": 1232,
+  "h": 928,
+  "caption": "",
+  "source": "IMG_3682.PNG"
+ },
+ {
+  "file": "web/043.jpg",
+  "w": 1232,
+  "h": 928,
+  "caption": "",
+  "source": "IMG_3683.PNG"
+ },
+ {
+  "file": "web/044.jpg",
+  "w": 1232,
+  "h": 928,
+  "caption": "",
+  "source": "IMG_3684.PNG"
+ },
+ {
+  "file": "web/045.jpg",
+  "w": 1232,
+  "h": 928,
+  "caption": "",
+  "source": "IMG_3685.PNG"
+ },
+ {
+  "file": "web/046.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3686.PNG"
+ },
+ {
+  "file": "web/047.jpg",
+  "w": 1232,
+  "h": 928,
+  "caption": "",
+  "source": "IMG_3690.PNG"
+ },
+ {
+  "file": "web/048.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3693.PNG"
+ },
+ {
+  "file": "web/049.jpg",
+  "w": 1600,
+  "h": 886,
+  "caption": "",
+  "source": "IMG_3703.jpeg"
+ },
+ {
+  "file": "web/050.jpg",
+  "w": 1600,
+  "h": 898,
+  "caption": "",
+  "source": "IMG_3705.jpeg"
+ },
+ {
+  "file": "web/051.jpg",
+  "w": 1600,
+  "h": 902,
+  "caption": "",
+  "source": "IMG_3706.jpeg"
+ },
+ {
+  "file": "web/052.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3719.PNG"
+ },
+ {
+  "file": "web/053.jpg",
+  "w": 1600,
+  "h": 896,
+  "caption": "",
+  "source": "IMG_3724.PNG"
+ },
+ {
+  "file": "web/054.jpg",
+  "w": 1600,
+  "h": 896,
+  "caption": "",
+  "source": "IMG_3727.PNG"
+ },
+ {
+  "file": "web/055.jpg",
+  "w": 1600,
+  "h": 896,
+  "caption": "",
+  "source": "IMG_3729.PNG"
+ },
+ {
+  "file": "web/056.jpg",
+  "w": 1600,
+  "h": 879,
+  "caption": "",
+  "source": "IMG_3772.jpeg"
+ },
+ {
+  "file": "web/057.jpg",
+  "w": 1600,
+  "h": 880,
+  "caption": "",
+  "source": "IMG_3774.jpeg"
+ },
+ {
+  "file": "web/058.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3784.PNG"
+ },
+ {
+  "file": "web/059.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3785.PNG"
+ },
+ {
+  "file": "web/060.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "",
+  "source": "IMG_3808.PNG"
+ },
+ {
+  "file": "web/061.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4002.PNG"
+ },
+ {
+  "file": "web/062.jpg",
+  "w": 1600,
+  "h": 900,
+  "caption": "",
+  "source": "IMG_4036.PNG"
+ },
+ {
+  "file": "web/063.jpg",
+  "w": 1254,
+  "h": 1254,
+  "caption": "",
+  "source": "IMG_4060.PNG"
+ },
+ {
+  "file": "web/064.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4074.PNG"
+ },
+ {
+  "file": "web/065.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4075.PNG"
+ },
+ {
+  "file": "web/066.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4076.PNG"
+ },
+ {
+  "file": "web/067.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4077.PNG"
+ },
+ {
+  "file": "web/068.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4078.PNG"
+ },
+ {
+  "file": "web/069.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4079.PNG"
+ },
+ {
+  "file": "web/070.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4125.PNG"
+ },
+ {
+  "file": "web/071.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4126.PNG"
+ },
+ {
+  "file": "web/072.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4127.PNG"
+ },
+ {
+  "file": "web/073.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4128.PNG"
+ },
+ {
+  "file": "web/074.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4129.PNG"
+ },
+ {
+  "file": "web/075.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4130.PNG"
+ },
+ {
+  "file": "web/076.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4131.PNG"
+ },
+ {
+  "file": "web/077.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4132.PNG"
+ },
+ {
+  "file": "web/078.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4133.PNG"
+ },
+ {
+  "file": "web/079.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4134.PNG"
+ },
+ {
+  "file": "web/080.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4135.PNG"
+ },
+ {
+  "file": "web/081.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4136.PNG"
+ },
+ {
+  "file": "web/082.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4137.PNG"
+ },
+ {
+  "file": "web/083.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4138.PNG"
+ },
+ {
+  "file": "web/084.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4139.PNG"
+ },
+ {
+  "file": "web/085.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4140.PNG"
+ },
+ {
+  "file": "web/086.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4141.PNG"
+ },
+ {
+  "file": "web/087.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4142.PNG"
+ },
+ {
+  "file": "web/088.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4143.PNG"
+ },
+ {
+  "file": "web/089.jpg",
+  "w": 1456,
+  "h": 816,
+  "caption": "",
+  "source": "IMG_4144.PNG"
+ },
+ {
+  "file": "web/090.jpg",
+  "w": 1600,
+  "h": 897,
+  "caption": "Veiled Figures in Misty Pine Woods",
+  "source": "Veiled Figures in Misty Pine Woods.png"
+ },
+ {
+  "file": "web/091.jpg",
+  "w": 1573,
+  "h": 1600,
+  "caption": "Don't Do Lazy",
+  "source": "dont.do.lazy.png"
+ },
+ {
+  "file": "web/092.jpg",
+  "w": 1041,
+  "h": 1041,
+  "caption": "",
+  "source": "timothybuckley02.PNG"
+ }
+]
