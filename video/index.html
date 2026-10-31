@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video: Timothy Buckley</title>
+<title>Motion: Timothy Buckley</title>
 <link rel="stylesheet" href="../home.css">
 <style>
 main{max-width:1100px;margin:0 auto;padding:26px 20px 60px}
@@ -21,9 +21,9 @@ h2{font-weight:normal;font-size:14px;letter-spacing:.1em;text-transform:uppercas
 </style>
 </head>
 <body>
-<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/sound/">Sound</a><a href="/images/">Images</a><a href="/video/" class="on">Video</a></nav>
+<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/video/" class="on">Motion</a><a href="/images/">Stills</a><a href="/sound/">Sound</a><a class="ig" href="https://www.instagram.com/major.morton.buckley" rel="noopener">@major.morton.buckley</a></nav>
 <main>
-<h1>Video</h1>
+<h1>Motion</h1>
 <p class="intro" id="intro"></p>
 <div id="list"></div>
 </main>
@@ -45,5 +45,6 @@ emb.forEach(v=>{const y=v.date.slice(0,4);if(y!==yr){yr=y;const h=document.creat
 if(only.length){const h=document.createElement('h2');h.textContent='On Vimeo';L.appendChild(h);const p=document.createElement('p');p.className='d';p.textContent='These play on Vimeo rather than here.';L.appendChild(p);
  const ul=document.createElement('div');ul.className='links';only.forEach(v=>{const a=document.createElement('a');a.href='https://vimeo.com/'+v.id;a.target='_blank';a.rel='noopener';a.textContent=v.title;ul.appendChild(a)});L.appendChild(ul)}
 </script>
+<footer class="foot">Timothy Buckley, artist, filmmaker, <a href="https://altitude80.com" rel="noopener">technologist</a>. Also Mr. InBetween, Major Morton, Prisoner of Gravity. Chicago, by way of downtown New York.<br>Messages: <a href="https://www.instagram.com/major.morton.buckley" rel="noopener">@major.morton.buckley</a> on Instagram.</footer>
 </body>
 </html>
