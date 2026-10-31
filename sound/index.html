@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sound: Mr. InBetween</title>
 <meta name="description" content="85 recordings by Timothy Buckley (Mr. InBetween), 2014 to 2024. Streams from SoundCloud.">
 <style>
@@ -12,7 +12,6 @@ header::after{content:"";position:absolute;inset:0;background:linear-gradient(to
 .hd{position:relative;z-index:1;display:flex;gap:20px;align-items:flex-end;padding:24px 16px 0;max-width:1100px;margin:0 auto;width:100%}
 .hd img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--bg);background:var(--card)}
 h1{margin:0;font-size:2rem;line-height:1.1}.sub{color:var(--mute);margin:4px 0 0}
-.home{position:absolute;top:12px;left:16px;z-index:2;color:#fff;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;background:rgba(0,0,0,.45);padding:5px 10px;border-radius:6px}
 main{max-width:1100px;margin:0 auto;padding:16px 16px 120px}
 .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 10px;font-family:system-ui,sans-serif;font-size:14px}
 .bar input,.bar select,.bar button{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg)}
@@ -38,8 +37,15 @@ h2.yr{font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(-
 footer{color:var(--mute);font-size:.8rem;text-align:center;padding:30px 16px;font-family:system-ui,sans-serif}
 footer a{color:var(--acc2)}
 @media(max-width:620px){.hd img{width:84px;height:84px}h1{font-size:1.5rem}#now{flex-wrap:wrap}#now iframe{flex-basis:100%}}
+
+.nav{display:flex;align-items:center;gap:6px;padding:0 20px;height:60px;background:#000;border-bottom:1px solid #262626;position:sticky;top:0;z-index:20}
+.nav .brand{color:#fff;text-decoration:none;font-size:21px;margin-right:26px;font-family:Georgia,serif;white-space:nowrap}
+.nav a:not(.brand){color:#9a9a9a;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:0 14px;height:60px;display:flex;align-items:center;border-bottom:3px solid transparent;margin-bottom:-1px}
+.nav a:not(.brand):hover{color:#fff}.nav a.on{color:#fff;border-bottom-color:#e8703f}
+@media(max-width:560px){.nav{height:52px;padding:0 12px}.nav .brand{font-size:18px;margin-right:10px}.nav a:not(.brand){padding:0 9px;height:52px;font-size:12px}}
 </style></head><body>
-<header><a class="home" href="/">timothybuckley.com</a><div class="hd"><img src="art/avatar.jpg" alt=""><div><h1 id="name"></h1><p class="sub" id="bio"></p></div></div></header>
+<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/sound/" class="on">Sound</a><a href="/images/">Images</a><a href="/video/">Video</a></nav>
+<header><div class="hd"><img src="art/avatar.jpg" alt=""><div><h1 id="name"></h1><p class="sub" id="bio"></p></div></div></header>
 <main>
 <div class="bar"><input id="q" type="search" placeholder="Search titles, descriptions, tags"><select id="sort"><option value="old">Oldest first</option><option value="new">Newest first</option><option value="az">Title A to Z</option><option value="long">Longest first</option></select><button id="theme">Theme</button><span class="n" id="count"></span></div>
 <div id="list"></div>
