@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Images: Timothy Buckley</title>
+<link rel="stylesheet" href="../home.css">
+<style>
+main{max-width:1300px;margin:0 auto;padding:26px 20px 60px}
+h1{font-weight:normal;font-size:26px;margin:10px 0 6px}
+h2{font-weight:normal;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#888;border-bottom:1px solid #222;padding-bottom:6px;margin:34px 0 16px}.intro{color:#999;font-size:14px;margin-bottom:22px}
+.grid{columns:4 280px;column-gap:14px}
+.grid figure{break-inside:avoid;margin:0 0 14px;cursor:zoom-in}
+.grid img{width:100%;height:auto;display:block;background:#111}
+figcaption{color:#999;font-size:13px;padding:5px 2px 0}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.96);display:none;align-items:center;justify-content:center;z-index:10}
+#lb.on{display:flex}#lb img{max-width:96vw;max-height:88vh;object-fit:contain}
+#lb .cap{position:absolute;left:0;right:0;bottom:14px;text-align:center;color:#bbb;font-size:14px}
+#lb button{position:absolute;top:50%;transform:translateY(-50%);background:none;border:0;color:#888;font-size:44px;cursor:pointer;padding:20px}
+#lb button:hover{color:#fff}#lb .prev{left:4px}#lb .next{right:4px}
+#lb .x{top:10px;right:14px;transform:none;font-size:30px;padding:8px}
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/sound/">Sound</a><a href="/images/" class="on">Images</a><a href="/video/">Video</a></nav>
+<main>
+<h1>Images</h1>
+<p class="intro" id="intro"></p>
+<div class="grid" id="grid"></div>
+</main>
+<div id="lb"><button class="prev" aria-label="Previous">‹</button><img alt=""><button class="next" aria-label="Next">›</button><button class="x" aria-label="Close">×</button><div class="cap"></div></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const I=JSON.parse(document.getElementById('data').textContent);
+document.getElementById('intro').textContent=`${I.length} images.`;
+const G=document.getElementById('grid');G.className='';const secs=[...new Set(I.map(i=>i.section||''))];
+let g=null;secs.forEach(sec=>{if(sec){const h=document.createElement('h2');h.textContent=sec;G.appendChild(h)}g=document.createElement('div');g.className='grid';G.appendChild(g);
+I.forEach((it,n)=>{if((it.section||'')!==sec)return;const f=document.createElement('figure');f.innerHTML=`<img loading="lazy" src="${it.file}" width="${it.w}" height="${it.h}" alt="">${it.caption?'<figcaption></figcaption>':''}`;
+ f.querySelector('img').alt=it.caption||'';if(it.caption)f.querySelector('figcaption').textContent=it.caption;f.addEventListener('click',()=>open(n));g.appendChild(f)})});
+const lb=document.getElementById('lb'),li=lb.querySelector('img'),cap=lb.querySelector('.cap');let cur=0;
+function open(n){cur=(n+I.length)%I.length;li.src=I[cur].file;cap.textContent=I[cur].caption||'';lb.classList.add('on');document.body.style.overflow='hidden'}
+function close(){lb.classList.remove('on');document.body.style.overflow=''}
+lb.querySelector('.prev').onclick=e=>{e.stopPropagation();open(cur-1)};lb.querySelector('.next').onclick=e=>{e.stopPropagation();open(cur+1)};lb.querySelector('.x').onclick=close;
+lb.addEventListener('click',e=>{if(e.target===lb)close()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+</script>
+</body>
+</html>
