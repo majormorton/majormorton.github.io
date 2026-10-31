@@ -39,15 +39,14 @@ footer a{color:var(--acc2)}
 @media(max-width:620px){.hd img{width:84px;height:84px}h1{font-size:1.5rem}#now{flex-wrap:wrap}#now iframe{flex-basis:100%}}
 
 .nav{display:flex;align-items:center;gap:6px;padding:0 20px;height:60px;background:#000;border-bottom:1px solid #262626;position:sticky;top:0;z-index:20}
-.nav .brand{color:#fff;text-decoration:none;font-size:21px;margin-right:26px;font-family:Georgia,serif;white-space:nowrap}
+.nav .brand{color:#fff;text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;font-size:17px;letter-spacing:.06em;text-transform:uppercase;margin-right:26px;white-space:nowrap}.nav .brand img{height:30px;width:auto;display:block}
 .nav a:not(.brand){color:#9a9a9a;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:0 14px;height:60px;display:flex;align-items:center;border-bottom:3px solid transparent;margin-bottom:-1px}
 .nav a:not(.brand):hover{color:#fff}.nav a.on{color:#fff;border-bottom-color:#e8703f}
-.nav a.ig{margin-left:auto;text-transform:none;letter-spacing:0;font-size:13px;padding-right:0}
 .foot{border-top:1px solid var(--line);padding:26px 20px 34px;color:var(--mute);font-size:14px;line-height:1.6;text-align:center;font-family:Georgia,serif}.foot a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}.foot a:hover{border-bottom-color:#e8703f}
-@media(max-width:640px){.nav a.ig{display:none}}
+@media(max-width:640px){}
 @media(max-width:560px){.nav{height:52px;padding:0 12px}.nav .brand{font-size:18px;margin-right:10px}.nav a:not(.brand){padding:0 9px;height:52px;font-size:12px}}
 </style></head><body>
-<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/video/">Motion</a><a href="/images/">Stills</a><a href="/sound/" class="on">Sound</a><a class="ig" href="https://www.instagram.com/major.morton.buckley" rel="noopener">@major.morton.buckley</a></nav>
+<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/video/">Motion</a><a href="/images/">Stills</a><a href="/sound/" class="on">Sound</a></nav>
 <header><div class="hd"><img src="art/avatar.jpg" alt=""><div><h1 id="name"></h1><p class="sub" id="bio"></p></div></div></header>
 <main>
 <div class="bar"><input id="q" type="search" placeholder="Search titles, descriptions, tags"><select id="sort"><option value="old">Oldest first</option><option value="new">Newest first</option><option value="az">Title A to Z</option><option value="long">Longest first</option></select><button id="theme">Theme</button><span class="n" id="count"></span></div>
