@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Motion: Timothy Buckley</title>
-<link rel="stylesheet" href="../home.css">
+<link rel="icon" href="/home/logo-80.png"><link rel="stylesheet" href="../home.css">
 <style>
 main{max-width:1100px;margin:0 auto;padding:26px 20px 60px}
-h1{font-weight:normal;font-size:26px;margin:10px 0 6px}
+h1{font-weight:normal;font-size:34px;margin:10px 0 6px;color:var(--cream)}
 .intro{color:#999;font-size:14px;margin-bottom:22px}
 h2{font-weight:normal;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#888;border-bottom:1px solid #222;padding-bottom:6px;margin:34px 0 16px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
@@ -21,7 +21,7 @@ h2{font-weight:normal;font-size:14px;letter-spacing:.1em;text-transform:uppercas
 </style>
 </head>
 <body>
-<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/video/" class="on">Motion</a><a href="/images/">Stills</a><a href="/sound/">Sound</a></nav>
+<nav class="nav"><a class="brand" href="/"><img src="/home/logo-80.png" alt="">Timothy Buckley</a><a href="/video/" class="on">Motion</a><a href="/images/">Stills</a><a href="/sound/">Sound</a></nav>
 <main>
 <h1>Motion</h1>
 <p class="intro" id="intro"></p>
@@ -33,7 +33,7 @@ const V=JSON.parse(document.getElementById('data').textContent);
 const fmt=s=>{const m=Math.floor(s/60),x=s%60;return (m>=60?Math.floor(m/60)+':'+String(m%60).padStart(2,'0')+':':m+':')+String(x).padStart(2,'0')};
 const emb=V.filter(v=>v.embed).sort((a,b)=>b.date.localeCompare(a.date));
 const only=V.filter(v=>!v.embed);
-document.getElementById('intro').textContent=`${V.length} videos, 2017 to 2026. Hosted on Vimeo.`;
+document.getElementById('intro').textContent=`Films, as Prisoner of Gravity. ${V.length} videos, 2017 to 2026, hosted on Vimeo.`;
 const L=document.getElementById('list');
 let yr=null,grid=null;
 emb.forEach(v=>{const y=v.date.slice(0,4);if(y!==yr){yr=y;const h=document.createElement('h2');h.textContent=y;L.appendChild(h);grid=document.createElement('div');grid.className='grid';L.appendChild(grid)}
@@ -45,6 +45,6 @@ emb.forEach(v=>{const y=v.date.slice(0,4);if(y!==yr){yr=y;const h=document.creat
 if(only.length){const h=document.createElement('h2');h.textContent='On Vimeo';L.appendChild(h);const p=document.createElement('p');p.className='d';p.textContent='These play on Vimeo rather than here.';L.appendChild(p);
  const ul=document.createElement('div');ul.className='links';only.forEach(v=>{const a=document.createElement('a');a.href='https://vimeo.com/'+v.id;a.target='_blank';a.rel='noopener';a.textContent=v.title;ul.appendChild(a)});L.appendChild(ul)}
 </script>
-<footer class="foot">Timothy Buckley, artist, filmmaker, <a href="https://altitude80.com" rel="noopener">technologist</a>. Also Mr. InBetween, Major Morton, Prisoner of Gravity. Chicago, by way of downtown New York.<br>Messages: <a href="https://www.instagram.com/major.morton.buckley" rel="noopener">@major.morton.buckley</a> on Instagram.</footer>
+<footer class="foot"><dl class="in"><dt>Who</dt><dd>Timothy Buckley, artist, filmmaker, <a href="https://altitude80.com" rel="noopener">technologist</a>. Prisoner of Gravity, Major Morton and Mr. InBetween are all him.</dd><dt>Where</dt><dd>Chicago, by way of downtown New York.</dd><dt>Messages</dt><dd><a href="https://www.instagram.com/major.morton.buckley" rel="noopener">@major.morton.buckley</a> on Instagram.</dd></dl></footer>
 </body>
 </html>
