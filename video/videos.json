@@ -5,7 +5,8 @@
 "date": "2026-09-30",
 "dur": 65,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1231748115",
@@ -13,7 +14,8 @@
 "date": "2026-09-30",
 "dur": 70,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1231510575",
@@ -21,7 +23,8 @@
 "date": "2026-09-29",
 "dur": 71,
 "desc": "Big Fish Films\nDirected: Timothy Buckley \nCast: Yoshiko Chuma \n2026",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1230758425",
@@ -29,7 +32,8 @@
 "date": "2026-09-27",
 "dur": 845,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1225281989",
@@ -37,7 +41,8 @@
 "date": "2026-09-09",
 "dur": 64,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1223375083",
@@ -45,7 +50,8 @@
 "date": "2026-09-02",
 "dur": 3600,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1222554092",
@@ -53,7 +59,8 @@
 "date": "2026-08-30",
 "dur": 64,
 "desc": "Test Testimony of The School of Hard Knock: Chapter 6\n\nConcept / Direction / Dramaturg : Yoshiko Chuma\nArtist / Filmmaker / Technologist:  Timothy Buckley\n\nTheatreLab 356 W. 36th St. (3rd Floor), NYC\nSeptember 5th, 7:30\n2026",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1220435572",
@@ -61,7 +68,8 @@
 "date": "2026-08-22",
 "dur": 33,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1220434100",
@@ -69,7 +77,8 @@
 "date": "2026-08-22",
 "dur": 33,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1219396517",
@@ -77,7 +86,8 @@
 "date": "2026-08-18",
 "dur": 66,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1218342308",
@@ -85,7 +95,8 @@
 "date": "2026-08-14",
 "dur": 50,
 "desc": "Test Testimony of The School of Hard Knocks (Wendy Perron: Witness)",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1217129376",
@@ -93,7 +104,8 @@
 "date": "2026-08-10",
 "dur": 66,
 "desc": "Yoshiko Chuma and The School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1211261699",
@@ -101,7 +113,8 @@
 "date": "2026-07-19",
 "dur": 712,
 "desc": "Testimony of the School of Hard Knocks Chapter 05",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1208368859",
@@ -109,7 +122,8 @@
 "date": "2026-07-09",
 "dur": 45,
 "desc": "by Yoshiko Chuma.",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1208060088",
@@ -117,7 +131,8 @@
 "date": "2026-07-08",
 "dur": 45,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1204679703",
@@ -125,7 +140,8 @@
 "date": "2026-06-25",
 "dur": 722,
 "desc": "Testimony of The School of Hard Knocks (04) - Silent",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1199413323",
@@ -133,7 +149,8 @@
 "date": "2026-06-08",
 "dur": 267,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1142635388",
@@ -141,7 +158,8 @@
 "date": "2025-12-02",
 "dur": 1205,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1142614428",
@@ -149,7 +167,8 @@
 "date": "2025-12-02",
 "dur": 3033,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1140850925",
@@ -157,7 +176,8 @@
 "date": "2025-11-26",
 "dur": 85,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1136619643",
@@ -165,7 +185,8 @@
 "date": "2025-11-13",
 "dur": 1057,
 "desc": "School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1128849429",
@@ -173,7 +194,8 @@
 "date": "2025-10-20",
 "dur": 1045,
 "desc": "My Dinner with Morgan at Remedy Dinner",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1114514506",
@@ -181,7 +203,8 @@
 "date": "2025-08-30",
 "dur": 25,
 "desc": "“My Dinner with Morgan at Remedy Diner” Chapter 38 \nby Yoshiko Chuma and The School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1114313696",
@@ -189,7 +212,8 @@
 "date": "2025-08-29",
 "dur": 20,
 "desc": "“My Dinner with Morgan at Remedy Diner” : Chapter 37 \nby Yoshiko Chuma and The School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1102992351",
@@ -197,7 +221,8 @@
 "date": "2025-07-20",
 "dur": 836,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1097975621",
@@ -205,7 +230,8 @@
 "date": "2025-07-01",
 "dur": 194,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1091778653",
@@ -213,7 +239,8 @@
 "date": "2025-06-09",
 "dur": 19,
 "desc": "Yoshiko Chuma and The School of Hard Knocks, June 13 to 15, 2025, presented by Allied Productions and hosted by Jack Waters and Peter Cramer.",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1090281743",
@@ -221,7 +248,8 @@
 "date": "2025-06-03",
 "dur": 670,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1090074949",
@@ -229,7 +257,8 @@
 "date": "2025-06-03",
 "dur": 1799,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1070626774",
@@ -237,7 +266,8 @@
 "date": "2025-03-29",
 "dur": 47,
 "desc": "Production:  School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1070625699",
@@ -245,7 +275,8 @@
 "date": "2025-03-29",
 "dur": 51,
 "desc": "Production: School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1070624647",
@@ -253,7 +284,8 @@
 "date": "2025-03-29",
 "dur": 60,
 "desc": "Production: School of Hard Knocks",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1050824264",
@@ -261,7 +293,8 @@
 "date": "2025-01-27",
 "dur": 36,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1050597778",
@@ -269,7 +302,8 @@
 "date": "2025-01-26",
 "dur": 523,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1050596034",
@@ -277,7 +311,8 @@
 "date": "2025-01-26",
 "dur": 161,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1050594569",
@@ -285,7 +320,8 @@
 "date": "2025-01-26",
 "dur": 70,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1043652710",
@@ -293,7 +329,8 @@
 "date": "2025-01-03",
 "dur": 3594,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": true
 },
 {
 "id": "1043353755",
@@ -301,7 +338,8 @@
 "date": "2025-01-02",
 "dur": 161,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1041143398",
@@ -309,7 +347,8 @@
 "date": "2024-12-20",
 "dur": 900,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1038993742",
@@ -317,7 +356,8 @@
 "date": "2024-12-13",
 "dur": 768,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1015505153",
@@ -325,7 +365,8 @@
 "date": "2024-10-02",
 "dur": 63,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1015449169",
@@ -333,7 +374,8 @@
 "date": "2024-10-02",
 "dur": 63,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1012994539",
@@ -341,7 +383,8 @@
 "date": "2024-09-25",
 "dur": 63,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1008423611",
@@ -349,7 +392,8 @@
 "date": "2024-09-11",
 "dur": 148,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "590771267",
@@ -357,7 +401,8 @@
 "date": "2021-08-22",
 "dur": 241,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231815350",
@@ -365,7 +410,8 @@
 "date": "2017-08-31",
 "dur": 23,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231815195",
@@ -373,7 +419,8 @@
 "date": "2017-08-31",
 "dur": 9,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231813363",
@@ -381,7 +428,8 @@
 "date": "2017-08-30",
 "dur": 474,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231808097",
@@ -389,7 +437,8 @@
 "date": "2017-08-30",
 "dur": 477,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231807881",
@@ -397,7 +446,8 @@
 "date": "2017-08-30",
 "dur": 461,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "231186185",
@@ -405,7 +455,8 @@
 "date": "2017-08-26",
 "dur": 55,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "230072881",
@@ -413,7 +464,8 @@
 "date": "2017-08-17",
 "dur": 146,
 "desc": "interview",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "226068382",
@@ -421,7 +473,8 @@
 "date": "2017-07-18",
 "dur": 361,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "225035085",
@@ -429,7 +482,8 @@
 "date": "2017-07-10",
 "dur": 689,
 "desc": "PC July 10",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "206676020",
@@ -437,6 +491,7 @@
 "date": "2017-03-03",
 "dur": 635,
 "desc": "Gravity Falls - Hamlin Theatre",
-"embed": true
+"embed": true,
+"hide": false
 }
 ]
