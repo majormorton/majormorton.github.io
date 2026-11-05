@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Motion: Timothy Buckley</title>
+<link rel="icon" href="/favicon.png">
 <link rel="stylesheet" href="../home.css">
 <style>
 main{max-width:1100px;margin:0 auto;padding:26px 20px 60px}
@@ -21,7 +22,7 @@ h2{font-weight:normal;font-size:14px;letter-spacing:.1em;text-transform:uppercas
 </style>
 </head>
 <body>
-<nav class="nav"><a class="brand" href="/">Timothy Buckley</a><a href="/video/" class="on">Motion</a><a href="/images/">Stills</a><a href="/sound/">Sound</a></nav>
+<nav class="nav"><a class="brand" href="/"><img src="/home/logo-photo.png" alt="">Timothy Buckley</a><a href="/video/" class="on">Motion</a><a href="/images/">Stills</a><a href="/sound/">Sound</a></nav>
 <main>
 <h1>Motion</h1>
 <p class="intro" id="intro"></p>
@@ -37,11 +38,12 @@ document.getElementById('intro').textContent=`${V.length} films, 2017 to 2026. H
 const L=document.getElementById('list');
 let yr=null,grid=null;
 emb.forEach(v=>{const y=v.date.slice(0,4);if(y!==yr){yr=y;const h=document.createElement('h2');h.textContent=y;L.appendChild(h);grid=document.createElement('div');grid.className='grid';L.appendChild(grid)}
- const d=document.createElement('div');d.className='v';
+ const d=document.createElement('div');d.className='v';d.id='v'+v.id;
  d.innerHTML=`<div class="frame"><img loading="lazy" src="thumbs/${v.id}.jpg" alt=""><div class="pl">▶</div></div><div class="t"></div><div class="d">${v.date} · ${fmt(v.dur)}</div>${v.desc?'<div class="desc"></div>':''}`;
  d.querySelector('.t').textContent=v.title;if(v.desc)d.querySelector('.desc').textContent=v.desc;
  d.querySelector('.frame').addEventListener('click',function(){this.innerHTML=`<iframe src="https://player.vimeo.com/video/${v.id}?autoplay=1&dnt=1" allow="autoplay; fullscreen; picture-in-picture" title=""></iframe>`;this.querySelector('iframe').title=v.title;this.style.cursor='default'},{once:true});
  grid.appendChild(d)});
+const want=location.hash.slice(1);if(want){const t=document.getElementById('v'+want);if(t){t.scrollIntoView({block:'center'});t.querySelector('.frame').click()}}
 if(only.length){const h=document.createElement('h2');h.textContent='On Vimeo';L.appendChild(h);const p=document.createElement('p');p.className='d';p.textContent='These play on Vimeo rather than here.';L.appendChild(p);
  const ul=document.createElement('div');ul.className='links';only.forEach(v=>{const a=document.createElement('a');a.href='https://vimeo.com/'+v.id;a.target='_blank';a.rel='noopener';a.textContent=v.title;ul.appendChild(a)});L.appendChild(ul)}
 </script>
