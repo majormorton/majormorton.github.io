@@ -1,91 +1,21 @@
-<!doctype html>
-<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sound: Timothy Buckley</title>
 <link rel="icon" href="/favicon.png">
-<meta name="description" content="85 recordings by Timothy Buckley (Mr. InBetween), 2014 to 2024. Streams from SoundCloud.">
-<style>
-:root{--bg:#f6f3ee;--fg:#1b1a17;--mute:#6f6a60;--card:#fffdf9;--line:#e4ded3;--acc:#d84624;--acc2:#2f5d8a}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15140f;--fg:#ece7dc;--mute:#9d978a;--card:#1f1d17;--line:#2d2a22;--acc:#d84624;--acc2:#7eaee0}}
-:root[data-theme=dark]{--bg:#15140f;--fg:#ece7dc;--mute:#9d978a;--card:#1f1d17;--line:#2d2a22;--acc:#d84624;--acc2:#7eaee0}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Georgia,"Iowan Old Style",serif}
-header{position:relative;min-height:220px;background:#333 url("art/header.jpg") center/cover no-repeat;display:flex;align-items:flex-end}
-header::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 0%,rgba(0,0,0,.15) 60%,rgba(0,0,0,.35))}
-.hd{position:relative;z-index:1;display:flex;gap:20px;align-items:flex-end;padding:24px 16px 0;max-width:1100px;margin:0 auto;width:100%}
-.hd img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--bg);background:var(--card)}
-h1{margin:0;font-size:2rem;line-height:1.1}.sub{color:var(--mute);margin:4px 0 0}
-main{max-width:1100px;margin:0 auto;padding:16px 16px 120px}
-.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 10px;font-family:system-ui,sans-serif;font-size:14px}
-.bar input,.bar select,.bar button{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg)}
-.bar input{flex:1;min-width:180px}.bar button{cursor:pointer}.bar .n{color:var(--mute);margin-left:auto}
-h2.yr{font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);border-bottom:1px solid var(--line);padding-bottom:6px;margin:34px 0 14px;font-family:system-ui,sans-serif}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-.art{aspect-ratio:1;background:var(--line);position:relative;cursor:pointer}
-.art img{width:100%;height:100%;object-fit:cover;display:block}
-.art .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--mute);font-family:system-ui,sans-serif;font-size:13px}
-.art .pl{position:absolute;right:10px;bottom:10px;width:44px;height:44px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.35)}
-.card.playing .pl{background:var(--acc2)}
-.meta{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
-.t{font-weight:700;font-size:1.02rem;line-height:1.25}.d{color:var(--mute);font-size:.85rem;font-family:system-ui,sans-serif}
-.desc{font-size:.9rem;opacity:.85;margin-top:4px}.tags{font-size:.78rem;color:var(--acc2);font-family:system-ui,sans-serif}
-.links{margin-top:auto;padding-top:8px;font-size:.8rem;font-family:system-ui,sans-serif}
-.links a{color:var(--acc2);text-decoration:none}.links a:hover{text-decoration:underline}
-#now{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:8px 16px;display:none;gap:14px;align-items:center;font-family:system-ui,sans-serif;font-size:14px;z-index:5}
-#now.on{display:flex}#now img{width:48px;height:48px;border-radius:6px;object-fit:cover}
-#now .info{min-width:140px}#now .ttl{font-weight:700}#now .sm{color:var(--mute);font-size:12px}
-#now iframe{flex:1;height:80px;border:0;min-width:200px}
-#now .x{background:none;border:0;color:var(--mute);font-size:20px;cursor:pointer}
-footer{color:var(--mute);font-size:.8rem;text-align:center;padding:30px 16px;font-family:system-ui,sans-serif}
-footer a{color:var(--acc2)}
-@media(max-width:620px){.hd img{width:84px;height:84px}h1{font-size:1.5rem}#now{flex-wrap:wrap}#now iframe{flex-basis:100%}}
-
-.nav{display:flex;align-items:center;gap:6px;padding:0 20px;height:60px;background:#000;border-bottom:1px solid #262626;position:sticky;top:0;z-index:20}
-.nav .brand{display:flex;align-items:center;gap:12px;color:#f5e4c8;text-decoration:none;margin-right:22px;white-space:nowrap;font-size:15px;letter-spacing:.18em;text-transform:uppercase;font-family:Georgia,serif}.nav .brand img{width:40px;height:40px;display:block}
-.nav a:not(.brand){color:#9a9a9a;text-decoration:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:0 14px;height:60px;display:flex;align-items:center;border-bottom:3px solid transparent;margin-bottom:-1px}
-.nav a:not(.brand):hover{color:#fff}.nav a.on{color:#fff;border-bottom-color:#d84624}
-.foot{border-top:1px solid var(--line);padding:34px 20px 44px;font-family:Georgia,serif}.foot .in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;column-gap:28px;row-gap:8px;font-size:14px;line-height:1.5;align-items:baseline}.foot dt{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}.foot dd{color:var(--fg)}.foot a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}.foot a:hover{border-bottom-color:#d84624}@media(max-width:560px){.foot .in{grid-template-columns:1fr}.foot dd{margin-bottom:12px}}
-@media(max-width:640px){}
-@media(max-width:560px){.nav{height:52px;padding:0 12px}.nav .brand{font-size:18px;margin-right:10px}.nav a:not(.brand){padding:0 9px;height:52px;font-size:12px}}
-</style></head><body>
-<nav class="nav"><a class="brand" href="/"><img src="/home/mark.svg" alt="">Timothy Buckley</a><a href="/video/">Motion</a><a href="/images/">Stills</a><a href="/sound/" class="on">Sound</a></nav>
-<header><div class="hd"><img src="art/avatar.jpg" alt=""><div><h1 id="name">Sound</h1><p class="sub" id="bio"></p></div></div></header>
-<main>
-<div class="bar"><input id="q" type="search" placeholder="Search titles, descriptions, tags"><select id="sort"><option value="old">Oldest first</option><option value="new">Newest first</option><option value="az">Title A to Z</option><option value="long">Longest first</option></select><button id="theme">Theme</button><span class="n" id="count"></span></div>
-<div id="list"></div>
-<footer id="foot"></footer>
+<link rel="stylesheet" href="../home.css">
+</head>
+<body class="sub">
+<nav class="nav"><a class="brand" href="/" aria-label="Home"><img src="/home/mark.svg" alt=""></a><a href="/video/">Motion</a><a href="/images/">Stills</a><a href="/sound/" class="on">Sound</a></nav>
+<main class="wrap">
+<header class="ph"><svg class="ph-rings" viewBox="0 0 400 400" aria-hidden="true"><g fill="none" stroke="#f5e4c8" stroke-width="3" opacity=".7"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="160"/></g></svg><h1>Sound</h1><p class="n">12 recordings. The full catalogue is on <a href="https://soundcloud.com/mrinbetween" target="_blank" rel="noopener">SoundCloud</a>.</p></header>
+<div class="grid g-sound" id="grid"></div>
 </main>
-<footer class="foot"><dl class="in"><dt>Who</dt><dd>Timothy Buckley, artist, filmmaker, <a href="https://altitude80.com" rel="noopener">technologist</a>.</dd><dt>Where</dt><dd>Chicago, by way of downtown New York.</dd><dt>Follow</dt><dd><a href="https://www.instagram.com/major.morton.buckley" rel="noopener">Instagram</a> · <a href="https://vimeo.com/mrinbetween" rel="noopener">Vimeo</a> · <a href="https://soundcloud.com/mrinbetween" rel="noopener">SoundCloud</a></dd></dl></footer>
-<div id="now"><img id="nart" alt=""><div class="info"><div class="ttl" id="nttl"></div><div class="sm" id="nsub"></div></div><iframe id="sc" allow="autoplay" title="SoundCloud player"></iframe><button class="x" id="close" title="Close player">×</button></div>
-<script id="data" type="application/json">{"profile": {"name": "Mr. InBetween", "full": "Major Minor", "bio": "Human. Carbon-based.  Ask me how.", "city": "moonville", "url": "https://soundcloud.com/mrinbetween"}, "tracks": [{"id": 157583710, "title": "Talk Walk", "date": "2014-07-06", "year": "2014", "secs": 144, "art": "art/157583710.jpg", "desc": "", "genre": "Electronic", "tags": "", "url": "https://soundcloud.com/mrinbetween/talkwalk"}, {"id": 167788227, "title": "Just Wait a Minute", "date": "2014-09-15", "year": "2014", "secs": 249, "art": "art/167788227.jpg", "desc": "", "genre": "Buckley", "tags": "Electro Dance \"Buster King\"", "url": "https://soundcloud.com/mrinbetween/just-wait-a-minute"}, {"id": 341091068, "title": "Gravity Falls", "date": "2017-09-06", "year": "2017", "secs": 603, "art": "art/341091068.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/gravity-falls"}, {"id": 381824375, "title": "May B.", "date": "2018-01-11", "year": "2018", "secs": 200, "art": "art/381824375.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/may-b"}, {"id": 440224164, "title": "Here", "date": "2018-05-06", "year": "2018", "secs": 216, "art": "art/440224164.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/here"}, {"id": 441272001, "title": "Spider Bite", "date": "2018-05-08", "year": "2018", "secs": 225, "art": "art/441272001.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/spider-bite"}, {"id": 528270405, "title": "Static04 2", "date": "2018-11-11", "year": "2018", "secs": 889, "art": "art/528270405.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/static04-2"}, {"id": 862732276, "title": "WhichsideRUon", "date": "2020-07-22", "year": "2020", "secs": 208, "art": "art/862732276.jpg", "desc": "", "genre": "Folk & Singer-Songwriter", "tags": "", "url": "https://soundcloud.com/mrinbetween/whichsideruon"}, {"id": 1166620756, "title": "Sail My Ship Alone", "date": "2021-11-25", "year": "2021", "secs": 205, "art": "art/1166620756.jpg", "desc": "The past is the past", "genre": "Folk & Singer-Songwriter", "tags": "", "url": "https://soundcloud.com/mrinbetween/sail-my-ship-alone"}, {"id": 1288952698, "title": "ICANSEEIT", "date": "2022-06-17", "year": "2022", "secs": 274, "art": "art/1288952698.jpg", "desc": "", "genre": "Ambient", "tags": "", "url": "https://soundcloud.com/mrinbetween/icanseeit"}, {"id": 1787779717, "title": "Space Life 3", "date": "2024-03-29", "year": "2024", "secs": 224, "art": "art/1787779717.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/space-life-3"}, {"id": 1788036571, "title": "Hear You", "date": "2024-03-30", "year": "2024", "secs": 216, "art": "art/1788036571.jpg", "desc": "", "genre": "", "tags": "", "url": "https://soundcloud.com/mrinbetween/hear-you"}]}</script>
-<script>
-const DATA=JSON.parse(document.getElementById('data').textContent);const T=DATA.tracks;const P=DATA.profile;
-const fmt=s=>{const m=Math.floor(s/60),x=s%60;return (m>=60?Math.floor(m/60)+':'+String(m%60).padStart(2,'0')+':':m+':')+String(x).padStart(2,'0')};
-
-document.getElementById('bio').textContent='Twelve recordings, 2014 to 2024.';
-const total=T.reduce((a,t)=>a+t.secs,0);
-document.getElementById('foot').innerHTML=`${T.length} recordings, ${fmt(total)} in all, 2014 to 2024. Audio streams from <a href="${P.url}" rel="noopener">SoundCloud</a>.`;
-let cur=null;const sc=document.getElementById('sc');
-function play(t,card){document.querySelectorAll('.card.playing').forEach(c=>c.classList.remove('playing'));
- cur=t.id;card.classList.add('playing');
- const accent=getComputedStyle(document.documentElement).getPropertyValue('--acc').trim().replace('#','%23');
- sc.src=`https://w.soundcloud.com/player/?url=${encodeURIComponent('https://api.soundcloud.com/tracks/'+t.id)}&auto_play=true&show_artwork=false&show_user=false&show_teaser=false&visual=false&color=${accent}`;
- document.getElementById('now').classList.add('on');document.getElementById('nart').src=t.art||'';
- document.getElementById('nttl').textContent=t.title;document.getElementById('nsub').textContent=`${t.date} · ${fmt(t.secs)}`;}
-document.getElementById('close').addEventListener('click',()=>{sc.src='about:blank';cur=null;document.getElementById('now').classList.remove('on');document.querySelectorAll('.card.playing').forEach(c=>c.classList.remove('playing'))});
-function render(){const q=document.getElementById('q').value.toLowerCase();const s=document.getElementById('sort').value;
- let r=T.filter(t=>(t.title+' '+t.desc+' '+t.tags+' '+t.genre+' '+t.date).toLowerCase().includes(q));
- r.sort((a,b)=>s==='old'?a.date.localeCompare(b.date)||a.id-b.id:s==='new'?b.date.localeCompare(a.date)||b.id-a.id:s==='az'?a.title.localeCompare(b.title):b.secs-a.secs);
- document.getElementById('count').textContent=`${r.length} of ${T.length}`;
- const L=document.getElementById('list');L.innerHTML='';let yr=null,grid=null;
- r.forEach(t=>{const key=(s==='old'||s==='new')?t.year:'';if(key!==yr||!grid){yr=key;if(key){const h=document.createElement('h2');h.className='yr';h.textContent=key;L.appendChild(h)}grid=document.createElement('div');grid.className='grid';L.appendChild(grid)}
-  const c=document.createElement('div');c.className='card'+(t.id===cur?' playing':'');
-  c.innerHTML=`<div class="art">${t.art?`<img loading="lazy" src="${t.art}" alt="">`:`<div class="ph">no artwork</div>`}<div class="pl">▶</div></div>
-  <div class="meta"><div class="t"></div><div class="d">${t.date} · ${fmt(t.secs)}</div>${t.desc?`<div class="desc"></div>`:''}${(t.genre||t.tags)?`<div class="tags"></div>`:''}
-  <div class="links"><a href="${t.url}" target="_blank" rel="noopener">open on SoundCloud</a></div></div>`;
-  c.querySelector('.t').textContent=t.title;if(t.desc)c.querySelector('.desc').textContent=t.desc;if(t.genre||t.tags)c.querySelector('.tags').textContent=[t.genre,t.tags].filter(Boolean).join(' · ');
-  c.querySelector('.art').addEventListener('click',()=>play(t,c));grid.appendChild(c)});}
-document.getElementById('q').addEventListener('input',render);document.getElementById('sort').addEventListener('change',render);
-document.getElementById('theme').addEventListener('click',()=>{const r=document.documentElement;const d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=d?'light':'dark';try{localStorage.setItem('theme',r.dataset.theme)}catch(e){}});
-try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}
-render();
-</script></body></html>
+<footer class="foot"><dl class="in"><dt>Who</dt><dd>Timothy Buckley, artist, filmmaker, technologist.</dd><dt>Where</dt><dd>Chicago, by way of downtown New York.</dd><dt>Follow</dt><dd><a href="https://www.instagram.com/major.morton.buckley/" target="_blank" rel="noopener">Instagram</a> · <a href="https://vimeo.com/mrinbetween" target="_blank" rel="noopener">Vimeo</a> · <a href="https://soundcloud.com/mrinbetween" target="_blank" rel="noopener">SoundCloud</a></dd></dl></footer>
+<div class="lb" id="lb" hidden><button class="lb-x" id="lbx" aria-label="Close">×</button><button class="lb-p" id="lbp" aria-label="Previous">‹</button><button class="lb-n" id="lbn" aria-label="Next">›</button><div class="lb-in" id="lbin"></div><div class="lb-cap" id="lbcap"></div></div>
+<script id="data" type="application/json">[{"id": 1788036571, "t": "Hear You", "a": "art/1788036571.jpg"}, {"id": 1787779717, "t": "Space Life 3", "a": "art/1787779717.jpg"}, {"id": 1288952698, "t": "ICANSEEIT", "a": "art/1288952698.jpg"}, {"id": 1166620756, "t": "Sail My Ship Alone", "a": "art/1166620756.jpg"}, {"id": 862732276, "t": "WhichsideRUon", "a": "art/862732276.jpg"}, {"id": 528270405, "t": "Static04 2", "a": "art/528270405.jpg"}, {"id": 441272001, "t": "Spider Bite", "a": "art/441272001.jpg"}, {"id": 440224164, "t": "Here", "a": "art/440224164.jpg"}, {"id": 381824375, "t": "May B.", "a": "art/381824375.jpg"}, {"id": 341091068, "t": "Gravity Falls", "a": "art/341091068.jpg"}, {"id": 167788227, "t": "Just Wait a Minute", "a": "art/167788227.jpg"}, {"id": 157583710, "t": "Talk Walk", "a": "art/157583710.jpg"}]</script>
+<script src="../site.js"></script>
+<script>Site.init('g-sound');</script>
+</body>
+</html>
