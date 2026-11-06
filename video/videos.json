@@ -5,7 +5,8 @@
 "date": "2026-09-30",
 "dur": 65,
 "desc": "",
-"embed": true
+"embed": true,
+"hide": false
 },
 {
 "id": "1231748115",
@@ -41,7 +42,7 @@
 "dur": 64,
 "desc": "",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1223375083",
@@ -50,7 +51,7 @@
 "dur": 3600,
 "desc": "",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1222554092",
@@ -68,7 +69,7 @@
 "dur": 33,
 "desc": "",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1220434100",
@@ -77,7 +78,7 @@
 "dur": 33,
 "desc": "",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1219396517",
@@ -86,7 +87,7 @@
 "dur": 66,
 "desc": "",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1218342308",
@@ -95,7 +96,7 @@
 "dur": 50,
 "desc": "Test Testimony of The School of Hard Knocks (Wendy Perron: Witness)",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1217129376",
@@ -113,7 +114,7 @@
 "dur": 712,
 "desc": "Testimony of the School of Hard Knocks Chapter 05",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1208368859",
@@ -140,7 +141,7 @@
 "dur": 722,
 "desc": "Testimony of The School of Hard Knocks (04) - Silent",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1199413323",
@@ -149,7 +150,7 @@
 "dur": 267,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1142635388",
@@ -167,7 +168,7 @@
 "dur": 3033,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1140850925",
@@ -194,7 +195,7 @@
 "dur": 1045,
 "desc": "My Dinner with Morgan at Remedy Dinner",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1114514506",
@@ -203,7 +204,7 @@
 "dur": 25,
 "desc": "“My Dinner with Morgan at Remedy Diner” Chapter 38 \nby Yoshiko Chuma and The School of Hard Knocks",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1114313696",
@@ -212,7 +213,7 @@
 "dur": 20,
 "desc": "“My Dinner with Morgan at Remedy Diner” : Chapter 37 \nby Yoshiko Chuma and The School of Hard Knocks",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1102992351",
@@ -230,7 +231,7 @@
 "dur": 194,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1091778653",
@@ -239,7 +240,7 @@
 "dur": 19,
 "desc": "Yoshiko Chuma and The School of Hard Knocks, June 13 to 15, 2025, presented by Allied Productions and hosted by Jack Waters and Peter Cramer.",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1090281743",
@@ -266,7 +267,7 @@
 "dur": 47,
 "desc": "Production:  School of Hard Knocks",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1070625699",
@@ -275,7 +276,7 @@
 "dur": 51,
 "desc": "Production: School of Hard Knocks",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1070624647",
@@ -284,7 +285,7 @@
 "dur": 60,
 "desc": "Production: School of Hard Knocks",
 "embed": true,
-"hide": true
+"hide": false
 },
 {
 "id": "1050824264",
@@ -347,7 +348,7 @@
 "dur": 900,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1038993742",
@@ -356,7 +357,7 @@
 "dur": 768,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1015505153",
@@ -374,7 +375,7 @@
 "dur": 63,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1012994539",
@@ -383,7 +384,7 @@
 "dur": 63,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "1008423611",
@@ -392,7 +393,7 @@
 "dur": 148,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "590771267",
@@ -401,7 +402,7 @@
 "dur": 241,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231815350",
@@ -410,7 +411,7 @@
 "dur": 23,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231815195",
@@ -419,7 +420,7 @@
 "dur": 9,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231813363",
@@ -428,7 +429,7 @@
 "dur": 474,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231808097",
@@ -437,7 +438,7 @@
 "dur": 477,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231807881",
@@ -446,7 +447,7 @@
 "dur": 461,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "231186185",
@@ -455,7 +456,7 @@
 "dur": 55,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "230072881",
@@ -464,7 +465,7 @@
 "dur": 146,
 "desc": "interview",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "226068382",
@@ -473,7 +474,7 @@
 "dur": 361,
 "desc": "",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "225035085",
@@ -482,7 +483,7 @@
 "dur": 689,
 "desc": "PC July 10",
 "embed": true,
-"hide": false
+"hide": true
 },
 {
 "id": "206676020",
@@ -491,6 +492,6 @@
 "dur": 635,
 "desc": "Gravity Falls - Hamlin Theatre",
 "embed": true,
-"hide": false
+"hide": true
 }
 ]
