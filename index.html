@@ -8,25 +8,21 @@
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="home.css">
 </head>
-<body>
-    <header class="hero">
-        <img src="home/banner.jpg" alt="">
+<body class="screen">
+    <header class="hero film" id="hero" aria-label="Films, stills and sound by Timothy Buckley">
+        <video id="loop" class="ly bg" autoplay muted loop playsinline poster="home/banner.jpg">
+            <source src="home/banner.webm" type="video/webm">
+            <source src="home/banner.mp4" type="video/mp4">
+        </video>
+        <img id="cut" class="ly cut" alt="" src="home/feature.jpg">
+        <div id="flash" class="ly flash"></div>
         <div class="card">
-            <h1 class="wordmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -120 760 520" class="wm" role="img" aria-label="Timothy Buckley">
-<g fill="none" stroke="#f5e4c8" stroke-width="3" opacity=".8"><circle cx="560" cy="60" r="80"/><circle cx="560" cy="60" r="130"/><circle cx="560" cy="60" r="180"/></g>
-<g transform="rotate(-20 0 200)">
-<g transform="translate(0 220)"><path d="M0.11181640625 0.0V-0.6943359375H0.009765625V-0.859375H0.3857421875V-0.6943359375H0.28369140625V0.0Z" transform="translate(0.0 0) scale(420)" fill="#f5e4c8"/></g>
-<g transform="translate(200 120)"><path d="M0.04 0.0V-0.735H0.148V0.0Z" transform="translate(0.0 0) scale(130)" fill="#f5e4c8"/><path d="M0.04 0.0V-0.735H0.177L0.23600000000000002 -0.354L0.241 -0.315H0.243L0.248 -0.354L0.307 -0.735H0.444V0.0H0.34400000000000003V-0.493H0.338L0.334 -0.462L0.27 0.0H0.214L0.15 -0.462L0.146 -0.493H0.14V0.0Z" transform="translate(27.0 0) scale(130)" fill="#f5e4c8"/><path d="M0.179 0.008Q0.134 0.008 0.10175000000000001 -0.013000000000000001Q0.0695 -0.034 0.052250000000000005 -0.07Q0.035 -0.106 0.035 -0.151V-0.584Q0.035 -0.6295000000000001 0.052250000000000005 -0.6652500000000001Q0.0695 -0.7010000000000001 0.10175000000000001 -0.722Q0.134 -0.743 0.179 -0.743Q0.224 -0.743 0.25625 -0.722Q0.2885 -0.7010000000000001 0.30574999999999997 -0.665Q0.323 -0.629 0.323 -0.584V-0.151Q0.323 -0.106 0.30574999999999997 -0.07Q0.2885 -0.034 0.25625 -0.013000000000000001Q0.224 0.008 0.179 0.008ZM0.179 -0.097Q0.199 -0.097 0.20700000000000002 -0.11375Q0.215 -0.1305 0.215 -0.151V-0.584Q0.215 -0.6045 0.20650000000000002 -0.6212500000000001Q0.198 -0.638 0.179 -0.638Q0.1605 -0.638 0.15175 -0.6212500000000001Q0.14300000000000002 -0.6045 0.14300000000000002 -0.584V-0.151Q0.14300000000000002 -0.1305 0.15150000000000002 -0.11375Q0.16 -0.097 0.179 -0.097Z" transform="translate(92.6 0) scale(130)" fill="#f5e4c8"/><path d="M0.112 0.0V-0.624H0.01V-0.735H0.322V-0.624H0.22V0.0Z" transform="translate(141.7 0) scale(130)" fill="#f5e4c8"/><path d="M0.04 0.0V-0.735H0.148V-0.431H0.232V-0.735H0.34V0.0H0.232V-0.32H0.148V0.0Z" transform="translate(187.5 0) scale(130)" fill="#f5e4c8"/><path d="M0.125 0.0V-0.313L0.015 -0.735H0.121L0.17400000000000002 -0.5L0.1775 -0.468H0.1805L0.184 -0.5L0.23700000000000002 -0.735H0.343L0.233 -0.313V0.0Z" transform="translate(239.5 0) scale(130)" fill="#f5e4c8"/></g>
-<rect x="190" y="150" width="326.13" height="150" fill="#f5e4c8"/>
-<g transform="translate(0 420)"><path d="M0.0380859375 0.0V-0.859375H0.27099609375Q0.36474609375 -0.859375 0.407470703125 -0.813720703125Q0.4501953125 -0.76806640625 0.4501953125 -0.6630859375V-0.62548828125Q0.4501953125 -0.56494140625 0.428466796875 -0.52734375Q0.40673828125 -0.48974609375 0.3623046875 -0.47802734375Q0.42041015625 -0.46337890625 0.440185546875 -0.409423828125Q0.4599609375 -0.35546875 0.4599609375 -0.27783203125Q0.4599609375 -0.1943359375 0.4443359375 -0.1318359375Q0.4287109375 -0.0693359375 0.3876953125 -0.03466796875Q0.3466796875 0.0 0.27099609375 0.0ZM0.2060546875 -0.53564453125H0.2412109375Q0.26513671875 -0.53564453125 0.27197265625 -0.55419921875Q0.27880859375 -0.57275390625 0.27880859375 -0.5986328125V-0.68505859375Q0.27880859375 -0.7265625 0.2421875 -0.7265625H0.2060546875ZM0.22314453125 -0.1513671875Q0.2900390625 -0.1513671875 0.2900390625 -0.21484375V-0.322265625Q0.2900390625 -0.35888671875 0.279052734375 -0.380126953125Q0.26806640625 -0.4013671875 0.23779296875 -0.4013671875H0.2060546875V-0.15234375Q0.216796875 -0.1513671875 0.22314453125 -0.1513671875Z" transform="translate(0.0 0) scale(420)" fill="#d84624"/></g>
-<g transform="translate(210 285)"><path d="M0.184 0.008Q0.1385 0.008 0.10625000000000001 -0.013000000000000001Q0.074 -0.034 0.056999999999999995 -0.07Q0.04 -0.106 0.04 -0.151V-0.735H0.148V-0.151Q0.148 -0.1295 0.1565 -0.11325Q0.165 -0.097 0.184 -0.097Q0.20400000000000001 -0.097 0.21200000000000002 -0.11325Q0.22 -0.1295 0.22 -0.151V-0.735H0.328V-0.151Q0.328 -0.106 0.31074999999999997 -0.07Q0.2935 -0.034 0.26125 -0.013000000000000001Q0.229 0.008 0.184 0.008Z" transform="translate(0.0 0) scale(130)" fill="#0a0a0a"/><path d="M0.179 0.008Q0.133 0.008 0.10075 -0.012750000000000001Q0.0685 -0.0335 0.051750000000000004 -0.0695Q0.035 -0.1055 0.035 -0.151V-0.584Q0.035 -0.629 0.052250000000000005 -0.665Q0.0695 -0.7010000000000001 0.10200000000000001 -0.722Q0.1345 -0.743 0.179 -0.743Q0.2125 -0.743 0.239 -0.7304999999999999Q0.2655 -0.718 0.28425 -0.69625Q0.303 -0.6745 0.313 -0.64575Q0.323 -0.617 0.323 -0.584V-0.483H0.222V-0.584Q0.222 -0.607 0.21250000000000002 -0.6225Q0.203 -0.638 0.181 -0.638Q0.161 -0.638 0.15200000000000002 -0.622Q0.14300000000000002 -0.606 0.14300000000000002 -0.584V-0.151Q0.14300000000000002 -0.129 0.15275 -0.113Q0.1625 -0.097 0.181 -0.097Q0.20350000000000001 -0.097 0.21275 -0.1125Q0.222 -0.128 0.222 -0.151V-0.252H0.323V-0.151Q0.323 -0.106 0.3055 -0.07Q0.28800000000000003 -0.034 0.25575000000000003 -0.013000000000000001Q0.2235 0.008 0.179 0.008Z" transform="translate(50.4 0) scale(130)" fill="#0a0a0a"/><path d="M0.04 0.0V-0.735H0.148V-0.49V-0.47800000000000004H0.152L0.157 -0.49L0.241 -0.735H0.352L0.253 -0.493L0.365 0.0H0.254L0.182 -0.335H0.179L0.148 -0.26V0.0Z" transform="translate(99.6 0) scale(130)" fill="#0a0a0a"/><path d="M0.04 0.0V-0.735H0.148V-0.1H0.291V0.0Z" transform="translate(150.9 0) scale(130)" fill="#0a0a0a"/><path d="M0.04 0.0V-0.735H0.28700000000000003V-0.624H0.148V-0.426H0.248V-0.318H0.148V-0.111H0.28700000000000003V0.0Z" transform="translate(191.9 0) scale(130)" fill="#0a0a0a"/><path d="M0.125 0.0V-0.313L0.015 -0.735H0.121L0.17400000000000002 -0.5L0.1775 -0.468H0.1805L0.184 -0.5L0.23700000000000002 -0.735H0.343L0.233 -0.313V0.0Z" transform="translate(237.0 0) scale(130)" fill="#0a0a0a"/></g>
-</g></svg></h1>
-            <p class="line">Short films, stills and sound. Chicago, by way of downtown New York.</p>
-            <nav class="links">
-                <a href="/video/"><span class="w">Motion</span></a>
-                <a href="/images/"><span class="w">Stills</span></a>
-                <a href="/sound/"><span class="w">Sound</span></a>
+            <nav class="links" id="links">
+                <a href="/video/" data-syn="MOVE,SPIN,DRIFT,LURCH,STIR,MOTION"><span class="w">Motion</span></a>
+                <a href="/images/" data-syn="HOLD,FREEZE,FIX,STARE,WAIT,STILLS"><span class="w">Stills</span></a>
+                <a href="/sound/" data-syn="HUM,NOISE,SIGNAL,VOICE,PULSE,SOUND"><span class="w">Sound</span></a>
             </nav>
+            <p class="tick"><span class="in" id="truism"></span></p>
         </div>
     </header>
 
@@ -78,5 +74,25 @@
         <dt>Where</dt><dd>Chicago, by way of downtown New York.</dd>
         <dt>Follow</dt><dd><a href="https://www.instagram.com/major.morton.buckley" rel="noopener">Instagram</a> · <a href="https://vimeo.com/mrinbetween" rel="noopener">Vimeo</a> · <a href="https://soundcloud.com/mrinbetween" rel="noopener">SoundCloud</a></dd>
     </dl></footer>
+<script>
+(function(){
+var T=["NOW IS ALREADY HERE","THE SHOW WAS THE REHEARSAL","FILM IS FILM IS FILM","EVERY FILM IS A STILL THAT MOVED","SOUND IS MOTION YOU CANNOT SEE","NOTHING HERE IS FINISHED","THE FRAME IS THE ONLY WALL","LOOK TWICE, IT CHANGED","THE AUDIENCE IS ALSO ON THE RIDE","OLD LIGHT, NEW EYES","THE EDIT IS THE PERFORMANCE","LANGUAGE MOVES"];
+document.getElementById('truism').textContent=T[Math.floor(Math.random()*T.length)];
+/* the cut list: the loop runs, then single frames cut in. Each entry: image, seconds held. Shuffled per visit. */
+var CUTS=[["home/feature.jpg",2.6],["home/still1.jpg",1.6],["home/still2.jpg",1.2],["home/still3.jpg",1.6],["home/face.jpg",0.7],["home/still4.jpg",1.2],["home/still5.jpg",1.6],["home/still6.jpg",1.2]];
+var FLASH=["#d84624","#0a0a0a","#f5e4c8"];
+var cut=document.getElementById('cut'),flash=document.getElementById('flash'),links=document.getElementById('links'),loop=document.getElementById('loop');
+var order=CUTS.slice().sort(function(){return Math.random()-.5}),i=0,first=true;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){links.classList.add('on');return}
+function doFlash(ms,cb){flash.style.background=FLASH[Math.floor(Math.random()*FLASH.length)];flash.classList.add('on');setTimeout(function(){flash.classList.remove('on');cb&&cb()},ms)}
+function showCut(){var c=order[i%order.length];i++;cut.src=c[0];
+  doFlash(70,function(){cut.classList.add('on');if(first){first=false;links.classList.add('on')}
+    setTimeout(function(){doFlash(50,function(){cut.classList.remove('on');setTimeout(showCut,(i%3===0?7700:3800))})},c[1]*1000)})}
+setTimeout(showCut,7700);
+document.querySelectorAll('.hero .links a[data-syn]').forEach(function(a){var w=a.querySelector('.w'),orig=w.textContent,list=a.dataset.syn.split(','),t=null;
+a.addEventListener('mouseenter',function(){var k=0;clearInterval(t);t=setInterval(function(){w.textContent=list[k];k++;if(k>=list.length){clearInterval(t);w.textContent=orig}},110)});
+a.addEventListener('mouseleave',function(){clearInterval(t);w.textContent=orig})});
+})();
+</script>
 </body>
 </html>
